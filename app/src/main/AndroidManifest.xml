@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.semestralnapraca">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Where did my money go?"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SemestralnaPraca">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".addedPayment.AddPaymentActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".addedPayment.ShowPaymentActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".addedPayment.EditPaymentActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".more.MoreMenuActivity"
+            android:exported="true">
+
+
+        </activity>
+
+        <activity android:name=".addedPayment.DeletePaymentActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".more.TotalExpenseActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".more.ShowYearsActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".more.YearExpenseActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".more.ShowMonthsActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".more.MonthExpenseActivity"
+            android:exported="true">
+
+        </activity>
+
+    </application>
+
+</manifest>

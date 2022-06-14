@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addedPayment.AddPaymentActivity">
+
+    <TextView
+        android:id="@+id/add_payment"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="31dp"
+        android:background="@color/green"
+        android:gravity="center_horizontal"
+        android:text="Add payment"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/payment_category"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/purple_200"
+        android:gravity="center_horizontal"
+        android:text="Payment category:"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_payment" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="150dp"
+        android:layout_height="384dp"
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="203dp"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_category">
+
+
+        <RadioButton
+            android:id="@+id/radio_grocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grocery"
+            android:typeface="serif"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radio_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clothes"
+            android:typeface="serif"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radio_appliances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="appliances"
+            android:typeface="serif"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radio_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="charges"
+            android:typeface="serif"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/radio_restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="restaurants"
+            android:typeface="serif"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/radio_traveling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="traveling"
+            android:typeface="serif"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radio_free_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="free time"
+            android:typeface="serif"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radio_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="other"
+            android:typeface="serif"
+
+            />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/suma"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="203dp"
+        android:background="@color/green"
+        android:hint="enter prize(€):"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/note_of_payment"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/orange"
+        android:hint="add note:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suma" />
+
+    <Button
+        android:id="@+id/back_button_add_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="22dp"
+
+        android:text="back"
+
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_of_payment" />
+
+    <Button
+        android:id="@+id/add_payment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+
+        android:text="add"
+
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_of_payment" />
+
+    <TextView
+        android:id="@+id/date_add_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="707dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

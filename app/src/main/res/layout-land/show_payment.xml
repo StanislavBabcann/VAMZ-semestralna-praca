@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/showedCategoryTitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/orange"
+        android:text="Category of payment: "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:typeface="serif"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showedCategory"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="395dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:layout_below="@id/showedCategoryTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showedCategoryTitle" />
+
+    <TextView
+        android:id="@+id/showerPrizeTitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showedCategory"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/green"
+        android:text="Prize of payment: "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/showedPrize"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="395dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:layout_below="@id/showerPrizeTitle"
+         />
+
+    <TextView
+        android:id="@+id/showedNoteTitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/yellow"
+        android:text="Note of payment: "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/showedNote"
+        android:layout_width="370dp"
+        android:layout_height="280dp"
+        android:layout_below="@id/showedNoteTitle"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="650dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+
+    <Button
+        android:id="@+id/back_from_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showedPrize"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="BACK" />
+
+    <Button
+        android:id="@+id/edit_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showedPrize"
+        android:layout_marginStart="318dp"
+        android:layout_marginTop="80dp"
+        android:text="EDIT" />
+
+    <Button
+        android:id="@+id/delete_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showedPrize"
+
+        android:layout_marginStart="620dp"
+        android:layout_marginTop="80dp"
+
+        android:text="DELETE" />
+
+    <TextView
+        android:id="@+id/date_show_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="420dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:typeface="serif" />
+
+</RelativeLayout>
